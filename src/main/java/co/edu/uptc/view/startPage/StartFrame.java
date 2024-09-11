@@ -3,13 +3,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-package co.edu.uptc.view;
+package co.edu.uptc.view.startPage;
 
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Rectangle;
 
-import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -26,7 +25,6 @@ public class StartFrame extends JFrame {
         this.setSize(669, 466);
         this.setResizable(false);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setIconImage(new ImageIcon("src\\co\\edu\\uptc\\BattleShip icon.jpg").getImage());
         this.getContentPane().setBackground(new Color(0xF5F5F5));
         this.setLayout(null);
 
