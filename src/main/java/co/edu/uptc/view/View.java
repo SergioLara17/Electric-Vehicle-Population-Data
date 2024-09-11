@@ -1,13 +1,11 @@
 package co.edu.uptc.view;
 
 import co.edu.uptc.view.geoPage.GeoFrame;
-import co.edu.uptc.view.vehiclePage.VehicleFrame;
 import co.edu.uptc.view.startPage.StartFrame;
 
 public class View {
     private StartFrame startPageFrame;
     private GeoFrame geoFrame;
-    private VehicleFrame vehicleFrame;
 
     public View(){
         startPageFrame = new StartFrame("Pagina de inico");
@@ -15,9 +13,6 @@ public class View {
 
         geoFrame = new GeoFrame();
         geoFrame.setVisible(true);
-
-        vehicleFrame = new VehicleFrame();
-
     }
 
     
