@@ -1,30 +1,36 @@
 package co.edu.uptc.view.geoPage;
 
+import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.HeadlessException;
 
 import javax.swing.JFrame;
-import javax.swing.JPanel;
 
 public class GeoFrame extends JFrame { 
-    private JPanel headerPanel;
+    private Header headerPanel;
     private Body bodyPanel;
 
     public GeoFrame() throws HeadlessException {
         super("Informe");
-        this.setSize(669, 466);
+        this.setSize(960, 600);
         this.setResizable(false);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.getContentPane().setBackground(new Color(0xF5F5F5));
+        this.setBackground(new Color(0xF5F5F5));
+        setLayout(new BorderLayout(50, 20));
 
+        headerPanel = new Header();
+        headerPanel.setVisible(true);
+        headerPanel.setOpaque(true);
+        
+        
         bodyPanel = new Body();
         bodyPanel.setVisible(true);
         bodyPanel.setOpaque(true);
         
-        
-        bodyPanel.setBackground(Color.GREEN);
+        add(bodyPanel, BorderLayout.CENTER);
+        add(headerPanel, BorderLayout.NORTH);
 
-        add(bodyPanel);
+    
     }
 
     

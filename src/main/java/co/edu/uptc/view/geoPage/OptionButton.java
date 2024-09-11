@@ -13,7 +13,7 @@ public class OptionButton extends JButton{
         setActionCommand(actionCommand);
         setBackground(new Color(0xB2CEE7));
         setFont(new Font("Inria Sans", Font.BOLD, 15));
-        setPreferredSize(new Dimension(185, 34));
+        setPreferredSize(new Dimension(200, 34));
     }
 
     
