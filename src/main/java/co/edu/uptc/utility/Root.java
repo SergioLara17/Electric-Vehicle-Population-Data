@@ -9,6 +9,12 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 // import com.fasterxml.jackson.annotation.JsonProperty; // version 2.11.1
 /* ObjectMapper om = new ObjectMapper();
 Root root = om.readValue(myJsonString, Root.class); */
+
+public class Root{
+    public Meta meta;
+    public ArrayList<ArrayList<Object>> data;
+}
+
 class Approval{
     public int reviewedAt;
     public boolean reviewedAutomatically;
@@ -122,10 +128,6 @@ class Parameters{
 class Query{
 }
 
-public class Root{
-    public Meta meta;
-    public ArrayList<ArrayList<Object>> data;
-}
 
 class SubmissionDetails{
     public String permissionType;
